@@ -1,0 +1,57 @@
+.
+├── Dockerfile
+├── LICENSE
+├── README.md
+├── app.py
+├── artifacts
+│   └── data_ingestion
+│       └── data.zip
+├── config
+│   └── config.yaml
+├── logs
+│   └── running_logs.log
+├── main.py
+├── output.txt
+├── params.yaml
+├── requirements.txt
+├── research
+│   ├── 01_data_ingestion.ipynb
+│   └── trials.ipynb
+├── setup.py
+├── src
+│   ├── TEXTSUMMARIZER
+│   │   ├── __init__.py
+│   │   ├── __pycache__
+│   │   │   └── __init__.cpython-38.pyc
+│   │   ├── components
+│   │   │   └── __init__.py
+│   │   ├── config
+│   │   │   ├── __init__.py
+│   │   │   └── configuration.py
+│   │   ├── constants
+│   │   │   ├── __init__.py
+│   │   │   └── __pycache__
+│   │   │       └── __init__.cpython-38.pyc
+│   │   ├── enitity
+│   │   │   └── __init__.py
+│   │   ├── logging
+│   │   │   ├── __init__.py
+│   │   │   └── __pycache__
+│   │   │       └── __init__.cpython-38.pyc
+│   │   ├── pipeline
+│   │   │   └── __init__.py
+│   │   └── utils
+│   │       ├── __init__.py
+│   │       ├── __pycache__
+│   │       │   ├── __init__.cpython-38.pyc
+│   │       │   └── common.cpython-38.pyc
+│   │       └── common.py
+│   └── TEXT_SUMMARIZER.egg-info
+│       ├── PKG-INFO
+│       ├── SOURCES.txt
+│       ├── dependency_links.txt
+│       └── top_level.txt
+├── template.py
+└── test.py
+
+20 directories, 35 files
