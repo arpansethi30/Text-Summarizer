@@ -4,8 +4,26 @@
 ├── README.md
 ├── app.py
 ├── artifacts
-│   └── data_ingestion
-│       └── data.zip
+│   ├── data_ingestion
+│   │   ├── data.zip
+│   │   ├── samsum-test.csv
+│   │   ├── samsum-train.csv
+│   │   ├── samsum-validation.csv
+│   │   └── samsum_dataset
+│   │       ├── dataset_dict.json
+│   │       ├── test
+│   │       │   ├── data-00000-of-00001.arrow
+│   │       │   ├── dataset_info.json
+│   │       │   └── state.json
+│   │       ├── train
+│   │       │   ├── data-00000-of-00001.arrow
+│   │       │   ├── dataset_info.json
+│   │       │   └── state.json
+│   │       └── validation
+│   │           ├── data-00000-of-00001.arrow
+│   │           ├── dataset_info.json
+│   │           └── state.json
+│   └── data_validation
 ├── config
 │   └── config.yaml
 ├── logs
@@ -16,6 +34,7 @@
 ├── requirements.txt
 ├── research
 │   ├── 01_data_ingestion.ipynb
+│   ├── 02_data_validation.ipynb
 │   └── trials.ipynb
 ├── setup.py
 ├── src
@@ -24,22 +43,35 @@
 │   │   ├── __pycache__
 │   │   │   └── __init__.cpython-38.pyc
 │   │   ├── components
-│   │   │   └── __init__.py
+│   │   │   ├── __init__.py
+│   │   │   ├── __pycache__
+│   │   │   │   ├── __init__.cpython-38.pyc
+│   │   │   │   └── data_ingestion.cpython-38.pyc
+│   │   │   └── data_ingestion.py
 │   │   ├── config
 │   │   │   ├── __init__.py
+│   │   │   ├── __pycache__
+│   │   │   │   ├── __init__.cpython-38.pyc
+│   │   │   │   └── configuration.cpython-38.pyc
 │   │   │   └── configuration.py
 │   │   ├── constants
 │   │   │   ├── __init__.py
 │   │   │   └── __pycache__
 │   │   │       └── __init__.cpython-38.pyc
-│   │   ├── enitity
-│   │   │   └── __init__.py
+│   │   ├── entity
+│   │   │   ├── __init__.py
+│   │   │   └── __pycache__
+│   │   │       └── __init__.cpython-38.pyc
 │   │   ├── logging
 │   │   │   ├── __init__.py
 │   │   │   └── __pycache__
 │   │   │       └── __init__.cpython-38.pyc
 │   │   ├── pipeline
-│   │   │   └── __init__.py
+│   │   │   ├── __init__.py
+│   │   │   ├── __pycache__
+│   │   │   │   ├── __init__.cpython-38.pyc
+│   │   │   │   └── stage_01_data_ingestion.cpython-38.pyc
+│   │   │   └── stage_01_data_ingestion.py
 │   │   └── utils
 │   │       ├── __init__.py
 │   │       ├── __pycache__
@@ -54,4 +86,4 @@
 ├── template.py
 └── test.py
 
-20 directories, 35 files
+29 directories, 58 files
